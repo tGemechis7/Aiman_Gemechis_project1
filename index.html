@@ -1,29 +1,73 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <a link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div>
+      <header>
+ <h1 id="title" >freeCodeCamps Survey Form</h1>
+<p id="description" >
+          Thank you for taking the time to help us improve the platform</p>
+      </header>
+<form id="survey-form">
+<div>
+<label id="name-label">Name</label>
+          <input type="text" id="name"placeholder="Enter your name"required
+          />
+        </div>
+  <div>
+  <label id="email-label" for="email">Email</label> <input type="email" id="email" placeholder="Enter your Email" required
+          />
+        </div>
+<div><label id="number-label" >Age(optional)</label
+          >
+<input type="number" id="number" min="0" max="120" placeholder="Age"
+          />
+        </div>
+        <div>
+<p>Which option best describes your current role?</p>
+<select id="dropdown" name="role" class="form-control" required>
+<option value = "">Select current role</option>
+<option value="student">Student</option>
+<option value="job">Full Time Job</option>
+<option value="learner">Full Time Learner</option>
+<option value="preferNo">Prefer not to say</option>
+<option value="other">Other</option></select>
+        </div>
+<div>
+<p>Would you recommend freeCodeCamp to a friend?</p>
+          <label>
+<input value="definitely" type="radio" checked/>Definitely</label>
+  <label>
+<input value="maybe"type="radio" />Maybe</label><label>
+  <input value="not-sure" type="radio"/>Not sure</label >
+        </div>
+ <div>
+ <p>What is your favorite feature of freeCodeCamp?</p>
+<select id="most-like" name="mostLike" class="form-control" required>
+ <option  value=" ">Select an option</option>
+ <option value="challenges">Challenges</option>
+ <option value="projects">Projects</option>
+  <option value="community">Community</option>
+  <option value="openSource">Open Source</option>
+    </select>
+ </div>
+ <div>
+<p>  What would you like to see improved?(Check all that apply)</p>
+ <label><input value="front-end-projects" type="checkbox" />Front-end Projects</label>
+ <label> <input   value="back-end-projects"   type="checkbox"   />Back-end Projects</label>   
+ <label> <input  value="data-visualization"   type="checkbox" />Data Visualization</label>
+ <label   ><input  value="challenges"  type="checkbox"/>Challenges</label>
+ <label><input  value="open-source-community" type="checkbox" />Open Source Community</label>
+ <label
+ ><input  value="gitter-help-rooms" type="checkbox"  />Gitter help rooms</label>
 
-we are software developers 
-
-    hello world 
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
-    <script  src="js/index.js"></script>
+        <div>  <p>Any comments or suggestions?</p><textarea id="comments"name="comment" placeholder="Enter your comment here..."
+          ></textarea>
+        </div> <div> <button type="submit" id="submit" >Submit</button></div>
+      </form>
+    </div>
   </body>
 </html>
